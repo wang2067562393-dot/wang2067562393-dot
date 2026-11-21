@@ -4,7 +4,7 @@
 
 **人工智能硕士在读 · 长沙**
 
-大模型评测工程 · 端侧 AI（在学） · 半导体测试与自动化
+大模型评测工程 · 半导体与嵌入式系统（在学）
 
 <a href="mailto:wang2067562393@gmail.com"><img src="https://img.shields.io/badge/Gmail-wang2067562393@gmail.com-D14836?logo=gmail&logoColor=white&style=flat-square"></a>
 <img src="https://img.shields.io/badge/长沙-中国-00B96B?logo=openstreetmap&logoColor=white&style=flat-square">
@@ -20,9 +20,9 @@
 
 ---
 
-## 我在做的三个方向
+## 我在做的两个方向
 
-主线是评测，另外两个一个是真实工作、一个是兴趣。
+主线是评测；另一条是半导体与嵌入式——手上在做，同时在补硬件那一半。
 
 <table>
 <tr>
@@ -44,11 +44,11 @@
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="100%" valign="top">
 
-### 🔬 半导体测试与工业自动化
+### 🔬 半导体与嵌入式系统
 
-*把人工翻几千行 Log 变成一条命令。*
+*从解析 Log，到驱动芯片。*
 
 **[chip-test-automation](https://github.com/wang2067562393-dot/chip-test-automation)** — 日志解析、跨固件版本配对对比、3σ / MAD 异常检测；纯标准库，clone 即用。
 
@@ -56,22 +56,10 @@
 
 **UWB 芯片测试**（2025.12–2026.08）— 固件烧录与版本管理、用上位机 Log 定位异常。
 
-`Python` `日志` `零依赖`
-<sub>5 个工具 · 17 个测试 + CI</sub>
+**在学**（嵌入式和 AI 一起学）：从 UART / SPI / I2C 与寄存器读写起步 → 硬件在环测试夹具 → 板端推理。目标是把「上位机 + 总线 + 仪器」这条链路亲手打通，让测试从「读别人导出的 Log」变成「自己驱动被测芯片」。
 
-</td>
-<td width="50%" valign="top">
-
-### 🔌 端侧 AI 与实时链路
-
-*兴趣方向，在学，不冒充专业。*
-
-**[teleop-link-lab](https://github.com/wang2067562393-dot/teleop-link-lab)** — 实时链路测量方法：延迟/抖动/丢包注入、p95 与抖动、跨机器时钟偏移估计（误差 0.03 ms）。这套方法同样适用于 CAN / UART 总线。
-
-A 卡那组实测是这条线的起点：同一套测量方法，从 x86 GPU 挪到 ARM 板子上。板子还没到，先补嵌入式基础。
-
-`asyncio` `UDP` `C` `测量`
-<sub>67 个测试 · 跨机器可跑 · 板子待补</sub>
+`Python` `C` `日志` `零依赖`
+<sub>5 个工具 · 17 个测试 + CI · 嵌入式在学</sub>
 
 </td>
 </tr>
@@ -84,7 +72,10 @@ A 卡那组实测是这条线的起点：同一套测量方法，从 x86 GPU 挪
 ## 技能
 
 **能独立做的**
-评测协议设计 · 对照实验与统计判定 · 任务包与 verifier 自检 · 延迟/抖动测量 · 日志与数据自动化 · 测试与 CI
+评测协议设计 · 对照实验与统计判定 · 任务包与 verifier 自检 · 日志与数据自动化 · 测试与 CI
+
+**在学**
+UART / SPI / I2C 与寄存器读写 · 硬件在环测试夹具 · 交叉编译与板端推理
 
 **工具**
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square)
@@ -101,9 +92,9 @@ A 卡那组实测是这条线的起点：同一套测量方法，从 x86 GPU 挪
 
 ## 现在
 
-- **在找**：大模型评测、agent 训练环境（RLVR / verifier 方向）、端侧部署方向的实习（长沙线下或远程）
-- **在补**：Harbor 与 verifier 的实战（从零重做一道题、自己 hack 一次自己的评分器）；深度学习地基（手写反向传播与 MLP）
-- **短板写在明处**：没有真机经验，C++ 只到能读、能改小模块，嵌入式目前只是兴趣、还没有板子上的产出
+- **在找**：大模型评测、agent 训练环境（RLVR / verifier 方向）的实习（长沙线下或远程）；也在看半导体测试自动化 / 嵌入式软件的岗位
+- **在补**：Harbor 与 verifier 的实战（从零重做一道题、自己 hack 一次自己的评分器）；嵌入式那一半——总线协议、硬件在环、板端推理
+- **短板写在明处**：没有真机经验，C++ 只到能读、能改小模块，嵌入式还没在真实板子上跑出过东西
 
 <div align="center">
 
