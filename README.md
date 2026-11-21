@@ -4,7 +4,7 @@
 
 **人工智能硕士在读 · 长沙**
 
-大模型评测工程 · 具身智能 · 半导体测试与自动化
+大模型评测工程 · 端侧 AI（在学） · 半导体测试与自动化
 
 <a href="mailto:wang2067562393@gmail.com"><img src="https://img.shields.io/badge/Gmail-wang2067562393@gmail.com-D14836?logo=gmail&logoColor=white&style=flat-square"></a>
 <img src="https://img.shields.io/badge/长沙-中国-00B96B?logo=openstreetmap&logoColor=white&style=flat-square">
@@ -20,45 +20,31 @@
 
 ---
 
-## 我在做的四个方向
+## 我在做的三个方向
+
+主线是评测，另外两个一个是真实工作、一个是兴趣。
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="100%" valign="top">
 
-### 🧪 大模型评测与推理效率
+### 🧪 大模型评测与 agent 训练环境
 
 *怎么判断一个「提升」是真的。*
 
+**agentic RL 训练数据构建**（2026.06– ，实习）— 基于 Harbor 容器环境：题面（instruction）、可运行环境（Dockerfile）、评分器（verifier）；定可改面、冻结协议、三 seed 成对对照、证据链打包。
+
 **[evalkit](https://github.com/wang2067562393-dot/llm-inference-efficiency-notes)** — 3σ 幅度门槛、归一化评分、13 条发布前检查；含四个「看起来通过但不算数」的反例。
 
-**首组自测**：12 GB A 卡上 7B Q4 生成 **67.2 t/s**（CPU 8.3 t/s，**8.08×**），实测有效带宽 314 GB/s ≈ 标称的 72.7%；预填充只快 1.7×，长 prompt 收益远小于生成。
+**推理效率实测**：12 GB A 卡上 7B Q4 生成 **67.2 t/s**（CPU 8.3 t/s，**8.08×**），实测有效带宽 314 GB/s ≈ 标称的 72.7%；预填充只快 1.7×，长 prompt 收益远小于生成。
 
-**评测任务构建与质检**（2026.06–）— 定可改面、冻结协议、三 seed 成对对照、证据链打包。
-
-`Python` `统计判定` `CI`
+`Python` `统计判定` `Docker` `CI`
 <sub>43 个测试 · 零依赖 · 4 个评测方向</sub>
-
-</td>
-<td width="50%" valign="top">
-
-### 🎮 具身智能与实时链路
-
-*延迟多少？问题在哪一段？该降级还是该修？*
-
-**[teleop-link-lab](https://github.com/wang2067562393-dot/teleop-link-lab)** — 控制端 → 弱网代理 → 机器人 → 视频回流，全链路打点；自研延迟/抖动/丢包注入器。
-
-先校准再测量：零延迟基线 **0.4–0.9 ms**，注入 100 ms 后往返 **203.8 ms**，六个弱网场景全可复现；换台机器复跑，注入类指标偏差 ≤5%，基线差 +38%（已写进局限）。
-
-**跨机器模式**：三进程拆分 + 用 RTT 最小样本估时钟偏移（误差 0.03 ms），LAN 实测 50 ms 单向注入 → 往返 101.9 ms。
-
-`asyncio` `UDP` `实时测量`
-<sub>67 个测试 · 六场景实验报告 · 跨机器可跑</sub>
 
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td width="50%" valign="top">
 
 ### 🔬 半导体测试与工业自动化
 
@@ -74,29 +60,31 @@
 <sub>5 个工具 · 17 个测试 + CI</sub>
 
 </td>
-<td valign="top">
+<td width="50%" valign="top">
 
-### 🗂 工程地基
+### 🔌 端侧 AI 与实时链路
 
-*每周一个能跑、能复现的交付。*
+*兴趣方向，在学，不冒充专业。*
 
-**[ai-plan-2029](https://github.com/wang2067562393-dot/ai-plan-2029)** — GPU 基准、多镜像降级的数据获取、纯函数化的可测试分析；环境锁定、结果入库、CI 自动跑。
+**[teleop-link-lab](https://github.com/wang2067562393-dot/teleop-link-lab)** — 实时链路测量方法：延迟/抖动/丢包注入、p95 与抖动、跨机器时钟偏移估计（误差 0.03 ms）。这套方法同样适用于 CAN / UART 总线。
 
-正在补：不装框架，用 NumPy 从零写「权重 → 概率 → 损失 → 梯度 → 更新」。
+A 卡那组实测是这条线的起点：同一套测量方法，从 x86 GPU 挪到 ARM 板子上。板子还没到，先补嵌入式基础。
 
-`uv` `PyTorch` `CI`
-<sub>按周推进 · 结果可复算</sub>
+`asyncio` `UDP` `C` `测量`
+<sub>67 个测试 · 跨机器可跑 · 板子待补</sub>
 
 </td>
 </tr>
 </table>
+
+**在补的地基**：[ai-plan-2029](https://github.com/wang2067562393-dot/ai-plan-2029) — 每周一个能跑、能复现的交付；正在补手写反向传播与 MLP。
 
 ---
 
 ## 技能
 
 **能独立做的**
-评测协议设计 · 对照实验与统计判定 · 延迟/抖动测量 · 日志与数据自动化 · 测试与 CI
+评测协议设计 · 对照实验与统计判定 · 任务包与 verifier 自检 · 延迟/抖动测量 · 日志与数据自动化 · 测试与 CI
 
 **工具**
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=flat-square)
@@ -113,9 +101,9 @@
 
 ## 现在
 
-- **在找**：大模型评测、推理效率、具身智能 / 机器人实时链路方向的实习（长沙线下或远程）
-- **在补**：深度学习地基（手写反向传播与 MLP）、推理方法的原理实测
-- **短板写在明处**：没有真机经验，C++ 只到能读、能改小模块
+- **在找**：大模型评测、agent 训练环境（RLVR / verifier 方向）、端侧部署方向的实习（长沙线下或远程）
+- **在补**：Harbor 与 verifier 的实战（从零重做一道题、自己 hack 一次自己的评分器）；深度学习地基（手写反向传播与 MLP）
+- **短板写在明处**：没有真机经验，C++ 只到能读、能改小模块，嵌入式目前只是兴趣、还没有板子上的产出
 
 <div align="center">
 
