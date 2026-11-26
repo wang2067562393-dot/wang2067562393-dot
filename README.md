@@ -19,10 +19,10 @@
 
 ## 项目
 
-<a href="https://github.com/wang2067562393-dot/teleop-link-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=teleop-link-lab&theme=transparent&hide_border=true" height="115"></a>
-<a href="https://github.com/wang2067562393-dot/llm-inference-efficiency-notes"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=llm-inference-efficiency-notes&theme=transparent&hide_border=true" height="115"></a>
-<a href="https://github.com/wang2067562393-dot/chip-test-automation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=chip-test-automation&theme=transparent&hide_border=true" height="115"></a>
-<a href="https://github.com/wang2067562393-dot/litmatrix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=litmatrix&theme=transparent&hide_border=true" height="115"></a>
+<a href="https://github.com/wang2067562393-dot/teleop-link-lab"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=teleop-link-lab&theme=transparent&hide_border=true" height="115" alt="teleop-link-lab"></a>
+<a href="https://github.com/wang2067562393-dot/llm-inference-efficiency-notes"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=llm-inference-efficiency-notes&theme=transparent&hide_border=true" height="115" alt="llm-inference-efficiency-notes"></a>
+<a href="https://github.com/wang2067562393-dot/chip-test-automation"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=chip-test-automation&theme=transparent&hide_border=true" height="115" alt="chip-test-automation"></a>
+<a href="https://github.com/wang2067562393-dot/litmatrix"><img src="https://github-readme-stats.vercel.app/api/pin/?username=wang2067562393-dot&repo=litmatrix&theme=transparent&hide_border=true" height="115" alt="litmatrix"></a>
 
 ## 进行中
 
